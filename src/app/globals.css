@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --purple-light: #a78bfa;
+  --purple-dark: #7c3aed;
+  --background-light: #f3f4f6;
+  --background-dark: #1f2937;
+  --text-light: #374151;
+  --text-dark: #f3f4f6;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --radius: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  @apply bg-gradient-to-br from-purple-400 to-purple-600 dark:from-purple-800 dark:to-purple-900;
+  color: var(--text-light);
+}
+
+.dark body {
+  color: var(--text-dark);
+}
+
+.rounded-button {
+  @apply rounded-md;
+}
+
+.rounded-box {
+  @apply rounded-lg;
+}
+
