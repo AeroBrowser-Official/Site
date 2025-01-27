@@ -1,4 +1,6 @@
 import Link from "next/link"
+import { ExternalLink } from "lucide-react";
+
 
 export default function Navbar() {
   return (
@@ -23,6 +25,13 @@ export default function Navbar() {
             >
               Download
             </Link>
+            <Link
+  href="https://aerobrowser-docs.pages.dev"
+  className="flex items-center text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+>
+  Docs
+  <ExternalLink className="ml-1 w-4 h-4" />
+</Link>
           </div>
         </div>
       </div>
